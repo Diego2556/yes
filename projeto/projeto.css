@@ -1,0 +1,264 @@
+/* Estilos do site */
+@font-face {
+  font-family: 'Ubuntu', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+}
+
+body{
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  
+}
+
+/* CSS do header */
+
+.container {
+    justify-content: space-between;
+    display: flex;
+    height: 100px;
+    background-color:  #000000;
+    align-items: center;
+    /* margin-bottom: 5px; */
+  }
+
+.cabecalho{
+    height: 90%;
+   }
+
+.logo{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    margin-left: 20px;
+    padding: 5px;
+     
+}
+
+.menu{
+    width: 40%;
+    
+}
+
+
+.iten, a{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.list{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+   
+}
+
+/* CSS do main */
+
+.imgdesenho{
+  width: 100%;
+  height: 100vh;
+}
+
+.titulo{
+  width: 100%;
+  height: 15vh;
+  background-color: rgba(42, 92, 199, 0.705)
+
+}
+
+.titulo h2{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 5.5em;
+  text-align: center;
+  padding: 15px;
+
+}
+
+.container_paragrafo{
+  font-size: 1.3em;
+  line-height: 1.5em;
+  background-color: #ffffffd2;
+  padding: 10px;
+  width: 80%;
+}
+
+.container_article{
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  flex-direction: column;
+  font-size: 2em;
+  width: 90%;
+}
+
+.paragrafo{
+  font-family: 'Ubuntu', sans-serif;
+  position: center;
+  padding: 10px;
+  line-height: 1.5em;
+  width: 90%;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.imgpainel{
+  width: 82%;
+  background: rgba(10, 10, 10, 0.212);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+  margin: 10%;
+}
+
+.imgretorno{
+  width: 82%;
+  background: rgba(10, 10, 10, 0.212);
+  box-shadow: 0 0 10px 1px rgb(86, 25, 124);
+  margin: 10%;
+}
+
+.conteudo2{
+  display: flex;
+  backdrop-filter: blur(15px) ;
+  background: rgba(42, 92, 199, 0.705);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+  -webkit-backdrop-filter: blur(15px);
+}
+.container_paragrafo2{
+  font-size: 1.3em;
+  line-height: 5em;
+  padding: 10px;
+  width: 80%;
+}
+.container_article2{
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  flex-direction: column;
+  font-size: 2em;
+  width: 90%;
+}
+
+.paragrafo2{
+  font-family: 'Ubuntu', sans-serif;
+  position: center;
+  padding: 10px;
+  line-height: 1.5em;
+  width: 90%;
+  text-align: left;
+  margin-left: 15px;
+}
+.conteudo{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#botão{
+  background-color: #ddff00;
+}
+
+button {
+  background-color: #007ffe;
+  color: rgb(0, 0, 0);
+  padding: 16px 35px;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75); 
+}
+
+#botão:hover{
+  background-color: #1ac61d;
+  box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.75); 
+}
+
+button:hover {
+  background-color: #1ac61d;
+  box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.75); 
+}
+
+.container_paragrafo3{
+  font-size: 1.3em;
+  line-height: 4em;
+  background-color: #ffffffd2;
+  padding: 10px;
+  width: 90%;
+}
+.container_article3{
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  flex-direction: column;
+  font-size: 2em;
+  width: 90%;
+}
+
+.paragrafo3{
+  font-family: 'Ubuntu', sans-serif;
+  position: center;
+  padding: 10px;
+  line-height: 1.5em;
+  width: 90%;
+  text-align: left;
+  margin-left: 15px;
+}
+
+input[type="text"] {
+  font-size: 30px;
+  width:100%;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #808080;
+  cursor: auto;
+  border-width: 2px;
+  border-style: solid;
+  border: #000000;
+  border: 2px;
+  border-radius: 8px;
+
+}
+.container_calc {
+ 
+  margin: 30px;
+  box-sizing: border-box;
+  padding: 15px;
+  border: #000000;
+  border: 2px;
+  border-width: 2px;
+  border-style: solid;
+  background-color: #f0f0f1;
+  align-items: center;
+  border-radius: 8px;
+  width: 40%;
+
+
+}
+
+
+/* CSS do footer */
+
+.rodape{
+    height: 100px;
+  }
+  
+  .roda {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;    
+  }
+  
+  .imgrodape{
+    align-items: center;
+    height: 60%;
+  }
+
+  

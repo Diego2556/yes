@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hélios</title>
+        <link rel="stylesheet" type="text/css" href="projeto.css">
+        <link rel="stylesheet" type="text/css" href="../reset.css">
+        
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="cabecalho">
+                   <a> <img class="logo" src="../imagens/logo.png"></a>
+                </div>
+                <div class="menu">
+                    <nav class="list">
+                        <a class="iten" href="../index.html">Energia Solar</a>
+                        <a class="iten" href="Projeto.html">Projeto</a>
+                        <a class="iten" href="../sobrenos/Sobrenos.html">Sobre nós</a>
+                        <a class="iten" href="../contato/contato.html">Contato</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+        <div class="imagem">
+                <img class="imgdesenho"src="../imagens/desenho.jpg">
+        </div>
+            <div class="container_principal">
+                    <div data-aos="fade-right"   class="conteudo">
+                    <div class="container_paragrafo">
+                        <div class="container_article">
+                            <h2>
+                                Economia de Energia
+                            </h2>
+                        </div>
+                            <p class="paragrafo">
+                                Um exemplo prático de como é possível economizar energia usando energia solar é a instalação de painéis solares em uma casa residencial para gerar eletricidade. 
+                                <br>
+                                Quando a energia solar é capturada pelos painéis solares, ela é convertida em eletricidade que pode ser usada para alimentar a casa.
+                                <br>
+                                Os painéis solares também podem ser instalados em posições estratégicas para maximizar a captação de energia solar. Por exemplo, eles podem ser instalados em um telhado com exposição solar direta ou em um jardim próximo, permitindo que a casa capture a maior quantidade possível de energia solar.
+                            </p>
+                    </div>            
+                    <div class="imagem">
+                        <img class="imgpainel"src="../imagens/painel.jpg">
+                    </div>
+                </div> 
+            </div>
+            <div data-aos="fade-left"   class="conteudo2">
+                <div class="imagem">
+                    <img class="imgretorno"src="../imagens/retorno.jpg">
+                </div>
+                <div class="container_paragrafo2">
+                    <div class="container_article2">
+                        <h2>
+                            Retorno Sobre o Investimento
+                        </h2>
+                    </div>
+                        <p class="paragrafo2">
+                            Ao reduzir a dependência de fontes de energia mais caras e poluentes, a energia solar pode ajudar a economizar dinheiro em contas de energia. Além disso, a energia solar é uma fonte de energia limpa e renovável, o que ajuda a reduzir as emissões de gases de efeito estufa e a contribuir para um ambiente mais saudável e sustentável.
+                            <br>
+                            Ao gerar eletricidade de forma limpa e renovável, a casa pode reduzir sua dependência de fontes de energia mais caras e poluentes, ajudando a economizar dinheiro e a proteger o meio ambiente, 
+                            além do retorno sobre o investimento.
+                        </p>
+                </div>  
+            </div>
+            <div data-aos="fade-right"   class="conteudo">
+                <div class="container_paragrafo3">
+                    <div class="container_article3">
+                        <h2>
+                            Economizando Energia:
+                        </h2>
+                    </div>
+                        <p class="paragrafo3">
+                            Considerando uma média de 6 horas de Sol pleno, um painel on-grid de 265 W de potência geraria mais ou menos 38,16 kWh/mês. Para uma casa que esteja na média de consumo nacional (152,2 kWh/mês), isso equivale a 25% de toda a energia necessária para a residência.
+                            Para saber o quanto de dinheiro é possivel economizar, podemos usar uma simples conta:
+                            <br> 
+                            <strong> Economia de energia = (Energia gerada por painéis solares(228,96kw)) x (Preço da energia elétrica(R$ 0,92 por kWh)) x (% da energia solar utilizada(0.25 ou 25%))</strong>
+                        </p>
+                </div>  
+                <div class="container_calc">
+                    <input type="text" id="display" readonly>
+                    <br>
+                    <button onclick="clearDisplay()">C</button>
+                    <button onclick="addToDisplay('(')">(</button>
+                    <button onclick="addToDisplay(')')">)</button>
+                    <button onclick="addToDisplay('/')">÷</button>
+                    <br>
+                    <button onclick="addToDisplay('7')">7</button>
+                    <button onclick="addToDisplay('8')">8</button>
+                    <button onclick="addToDisplay('9')">9</button>
+                    <button onclick="addToDisplay('*')">x</button>
+                    <br>
+                    <button onclick="addToDisplay('4')">4</button>
+                    <button onclick="addToDisplay('5')">5</button>
+                    <button onclick="addToDisplay('6')">6</button>
+                    <button onclick="addToDisplay('-')">-</button>
+                    <br>
+                    <button onclick="addToDisplay('1')">1</button>
+                    <button onclick="addToDisplay('2')">2</button>
+                    <button onclick="addToDisplay('3')">3</button>
+                    <button onclick="addToDisplay('+')">+</button>
+                    <br>
+                    <button onclick="addToDisplay('0')">0</button>
+                    <button onclick="addToDisplay('.')">.</button>
+                    <button onclick="addToDisplay('%')">%</button>
+                    <button id="botão"onclick="calculate()">=</button>
+                </div>  
+        </main>
+        <footer class="rodape">
+            <div class="roda">
+                <img class="imgrodape"src="../imagens/logo.png">
+            </div>
+        </footer>
+        <script>
+            function addToDisplay(value) {
+                document.getElementById("display").value += value;
+            }
+    
+            function clearDisplay() {
+                document.getElementById("display").value = "";
+            }
+    
+            function calculate() {
+                var expression = document.getElementById("display").value;
+                var result = eval(expression);
+                document.getElementById("display").value = result;
+            }
+        </script>
+        
+    </body>
+</html>
