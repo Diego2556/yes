@@ -1,0 +1,437 @@
+/* Estilos do site */
+
+@keyframes animaçao {
+   from { color: #ff000000;}
+   to { color: #000000;}
+}
+
+@font-face {
+    font-family: 'Ubuntu', sans-serif;
+    src: url('./fonts/Ubuntu-Bold.ttf') format('truetype'),
+    url('./fonts/Ubuntu-BoldItalic.ttf') format('truetype'),
+    url('./fonts/Ubuntu-Italic.ttf') format('truetype'),
+    url('./fonts/Ubuntu-Light.ttf') format('truetype'),
+    url('./fonts/Ubuntu-LightItalic.ttf') format('truetype'),
+    url('./fonts/Ubuntu-Medium.ttf') format('truetype'),
+    url('./fonts/Ubuntu-MediumItalic.ttf') format('truetype'),
+    url('./fonts/Ubuntu-Regular.ttf') format('truetype');
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 5px;
+}
+
+.container {
+    justify-content: space-between;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color:  #000000;
+    align-items: center;
+   
+  }
+
+.cabecalho{
+    height: 90%;
+    
+   }
+
+.logo{
+    display: flex;
+    width: 84%;
+    height: 79%;
+    margin-left: 20px;
+    padding: 5px;
+   
+}
+
+.menu{
+    width: 40%;
+    
+}
+
+.iten, a{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.list{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+   
+}
+
+/* main */
+
+
+.container_video {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container_video video {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.container_video .content {
+    z-index: 1;
+    width: 60%;
+    height: 50%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    backdrop-filter: blur(15px) ;
+    background: rgba(10, 10, 10, 0.212);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -webkit-backdrop-filter: blur(15px);
+    
+
+}
+
+.container_video .content h1 { 
+    position: relative;  
+    margin: 0 auto;
+    padding: 10% 10%;
+    font-size: 5.5em;
+    text-transform: uppercase;
+    color: #ffffffdc;
+    /* animation-name: animaçao;
+    animation-duration: 3s; */
+     
+}
+
+
+.titulo {
+    font-size: 3em;
+    text-align: center;
+    padding: 10px, 0px, 10px, 0px;
+    margin: 0px 0 10px 0;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.conteudo {
+    margin: 30px 0 30px 10px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
+    height: 70vh;
+   
+}
+
+.container_articl {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 0 20px;
+    width: 40%;    
+
+}
+
+.painei {
+    width: 40%;
+    margin-right: 10px;
+    filter: drop-shadow(0 0 0.4em rgb(17, 16, 16));
+}
+
+.paragrafo {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    padding: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+ 
+}
+
+
+.container_botão{
+    width: 100%;
+    height: 40vh;
+    background-color: #3839E0;
+    text-align: center;
+    align-items: center;
+   
+    
+}
+
+.container_botão h3{
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    color: rgb(255, 232, 130, 100);
+    
+}
+
+.container_botão p {
+    color: #ffffff;
+    font-size: 1.7em;
+    padding: 0 10px 10px 10px;
+    margin-bottom: 20px ;
+}
+
+button {
+    position: relative;
+    display: block;
+    border-style: none;
+    border-radius: 10px;
+    z-index: 7;
+    width: 230px;
+    height: 60px;
+    background: #81FF70;
+    color: #5d5e50;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    
+    
+}
+
+
+.conteudo_energy {
+    margin: 60px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
+    height: 60vh;
+    width: 90%;
+
+}
+
+.container_article{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 40%;
+    height: 50vh;
+
+}
+
+.paineis {
+    width: 50%;
+    filter: drop-shadow(0 0 0.4em rgb(17, 16, 16));
+}
+
+
+.container_ibere {
+    width: 100%;
+    height: 80vh;
+    margin: 40px 0 10px 0;
+    backdrop-filter: blur(15px) ;
+    background: rgba(255, 238, 0, 0.527);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -webkit-backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .container_ibere_texto {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 40%;
+    margin-left: 20px;
+    text-align: center;
+              
+ }
+
+
+ .container_ibere_texto h2 {
+    margin: 40px 0;
+    font-size: 3em;
+ }
+
+ .container_ibere_texto p {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.5em;
+    
+
+ }
+
+#video {
+   width: 60%;
+   height: 60vh;
+   margin: 5% 5%;
+   position: relative;
+   box-shadow: #000000;
+   flex-grow: 2;
+   
+
+} 
+
+.container_energia {
+    background-image: url(./imagens/solar.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left center;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+.container_energia_texto {
+    background-color: #1a1616;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+    height: 100vh;
+}
+
+
+.container_energia_texto .titulo {
+   width: 20%;
+   writing-mode: vertical-lr;
+   font-weight: bold;
+   font-size: 5em;
+   margin: 10px 10px 10px 40px;
+   color: #ffa600;
+
+}
+
+.container_energia_texto .paragrafo {
+    width: 60%;
+    color: #ffffff;
+    line-height: 1.8em;
+    font-size: 1.7em;
+    margin: 40px 10px 20px 25px;
+   
+}
+
+.container_energia_texto_2{
+    background-color: #1a1616;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+    height: 90vh;
+    justify-content: baseline;
+
+}
+
+.container_energia_2 {
+    background-image: url(./imagens/solar.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left center;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.container_energia_texto_2 .paragrafo{
+    width: 60%;
+    color: #ffffff;
+    line-height: 2em;
+    font-size: 1.7em;
+    margin: 20px 10px 20px 25px;
+
+}
+
+.container_energia_texto_2 .titulo {
+    width: 20%;
+    transform: rotate(270deg); 
+    font-size: 5em;
+    font-weight: bold;
+    margin: 10px 10px 10px 30px;
+    color: #ffa600;
+    
+}
+
+/* rodapé */
+
+.rodape{
+    height: 20vh;
+}
+
+.roda {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+
+}
+
+.roda_endereço {
+    height: 100%;
+}
+
+.lista_roda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20vh;
+    
+}
+
+.lista_roda .itens_roda{
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+    height: 20%;
+    margin-left: 30px;
+    
+}
+
+.itens_roda{
+    display: flex;
+    align-items: center;
+}
+
+.lista_img {
+    width: 10%;
+    height: 100%;
+    margin-right: 10px;
+    
+}
+
+.imgrodape{
+    height: 60%;
+    margin-right: 200px;
+}
+
+.roda_icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.roda_img {
+    width: 20%;
+    height: 20%;
+   
+}
+
+  
